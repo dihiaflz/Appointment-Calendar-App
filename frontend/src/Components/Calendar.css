@@ -1,0 +1,156 @@
+.calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4%;
+    height: 65vh;
+}
+
+
+.fc-header-toolbar {
+    background-color: transparent;
+    color: white;
+    font-size: 10px;
+    font-family: Hedvig Letters Sans;
+    width: 29vw;
+    display: flex;
+    gap: 1vw;
+}
+
+
+.fc .fc-toolbar-title {
+  color: #131C27;
+}
+
+
+.fc .fc-toolbar.fc-header-toolbar {
+    
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+  
+  
+  .fc-day {
+    flex: 1;
+    border: 1px solid #131C27;
+    background-color: white;
+    color: #131C27;
+    width: 4vw;
+    font-family: Hedvig Letters Sans;
+  }
+  
+  .fc-event {
+    background-color: #F57C00;
+    border: 1px solid #F57C00;
+    font-family: Hedvig Letters Sans;
+  }
+
+  .fc .fc-toolbar-chunk {
+    display: flex;
+    align-self: flex-end;
+  }
+
+.fc .fc-toolbar-chunk .fc-button-primary {
+    background-color: #F57C00;
+    color: #fff;
+    border: 1px solid #F57C00;
+    font-family: Hedvig Letters Sans;
+    
+  }
+  
+  .fc .fc-toolbar-chunk .fc-prev-button, .fc .fc-toolbar-chunk .fc-next-button {
+    background-color: transparent;
+    color: #F57C00;
+    border: 1px solid #F57C00;
+  }
+
+
+  .fc .fc-toolbar-chunk .fc-prev-button:hover, .fc .fc-toolbar-chunk .fc-next-button:hover {
+    background-color: #F57C00;
+    color: white;
+    border: 1px solid #F57C00;
+  }
+
+.main .buttons {
+  display: flex;
+  gap: 2vw;
+  
+}
+
+.infos {
+    flex: 0 0 30vw;
+    overflow-y: auto;
+    border-right: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: Hedvig Letters Sans;
+}
+
+.tache {
+    padding: 1%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+    &:hover{
+        background-color: #f5f5f5;
+    }
+}
+
+.image {
+  height: 20vh;
+  width: 15vw;
+  border-radius: 8px;
+}
+
+.fc .fc-daygrid-day-top {
+  all: unset;
+  display: flex;
+}
+
+
+
+@media (max-width: 700px) and (min-width: 300px) {
+  .calendar {
+      display: flex;
+      flex-direction: column;
+      padding-top: 16vh;
+      gap: 5vh;
+      padding-bottom: 15vh;
+  }
+
+  .image {
+    width: 25vw;
+  }
+
+}
+
+
+@media (max-width: 400px) and (min-width: 300px) {
+  .calendar {
+      padding-top: 2vh;
+  }
+}
+
+
+
+@media (max-width: 500px) and (min-width: 300px) {
+  .calendar {
+      padding-left: 2vh;
+      padding-right: 2vh;
+      padding-bottom: 3vh;
+  }
+
+  .image {
+    height: 15vh;
+    width: 40vw;
+  }
+
+
+}
+

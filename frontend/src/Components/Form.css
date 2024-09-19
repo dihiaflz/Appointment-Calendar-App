@@ -1,0 +1,60 @@
+.Form .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    padding-top: 12vh;
+    text-align: center;
+
+}
+
+.Form h1 {
+    color: #1976D2;
+}
+
+.Form .buttons {
+    display: flex;
+    gap: 2vw;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.Form .form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+.Form .item {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding-bottom: 2vh;
+}
+
+.Form .input {
+    height: 8vh;
+    width: 40vw;
+    padding-left: 1vw;
+    border-radius: 10px;
+}
+
+.Form .input #file-upload-button {
+    color: #1976D2;
+}
+
+@media (max-width: 450px) and (min-width: 300px) {
+ 
+    .Form .input {
+        width: 100%;
+    }
+
+    .Form .form {
+        padding: 0 10vw;
+    }
+
+}

@@ -1,0 +1,21 @@
+.supp .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.supp h1 {
+    color: #1976D2;
+}
+
+.supp p {
+    padding: 0 2vw;
+}
+
+.supp .buttons {
+    display: flex;
+    gap: 2vw;
+}
