@@ -10,3 +10,5 @@ A full-stack MERN appointment scheduling application with a responsive design. U
 6. Run the code using the command **npm start** in both folders and everything will work properly 
  
 GOOD LUCK !
+
+# The code is on the master branch
